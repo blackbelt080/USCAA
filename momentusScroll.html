@@ -1,0 +1,74 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  <script src="\sticky.css"/script>
+  <script src="\smooth.css"/script>
+div.sticky {
+  /* not supported with browsers webkit position: -webkit-sticky;*/
+  position: sticky;
+  top: 0;
+  background-height: 486px;
+  background-width:  342 px;
+  background-color: black;
+  padding: 15x;
+  font-size: 11px;
+}
+</style>
+<!--Momentum Srolling -- for users who leave the screen after going to the page and need to return later point-->
+<div class="scroll-touch">
+<!--add smooth scrolling- for browsers that don't support scroll-behavior use Javascript or Jquery->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<!--set up auto scrolling for smooth scrolling-->
+
+<div class onscroll="auto"></div>
+<div class scroll-behavior="smoothly"</a>
+<!--sets position with snap element from parent node when scrolling stops-->
+
+<div> class="scroll-snap-type"</div>
+
+<!--set position alignment of child elements-->
+<script type="\scroll-snap-type.css"></script>
+
+<h2>Sticky Element: to scroll the page in mobile devices smoothly with positioning</h2>
+  <p>
+    This paragraph has momentum scrolling
+  </p>
+</div>
+<div class="sticky">This will stack to the screen when you reach the scroll position</div>
+  <p>
+    Text to be inserted for USCCA.
+  </p>
+  <h2>Scrolling back up in the page will take the sticky position and essentially remove it</h2>
+</div>
+<-!--lock scrolling on selection of itens-->
+<div class="container">
+  <section class="child"></section>
+  <section class="child"></section>
+  <section class="child"></section>
+  <p>...</p>
+</div>

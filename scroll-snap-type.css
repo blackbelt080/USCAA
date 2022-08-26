@@ -1,0 +1,27 @@
+//*container for scrolling coordinates for positioning of scrolling once element snaps to an element in the web page
+*/
+.container {
+  scroll-snap-type: y mandatory;
+}
+
+.child {
+  scroll-snap-align: start;
+}
+//*alllows to set snap-type manually
+.container {
+  /* OLD */
+  scroll-snap-points-y: repeat(300px);
+} */
+
+
+// *set snap-type and alignment along with cross borwser compatible for layout
+.container {
+  scroll-snap-type: mandatory;
+ //* scroll-snap-points-y: repeat(300px);*/
+  scroll-snap-type: y mandatory;
+}
+
+.child {
+  scroll-snap-align: start;
+}
+*/

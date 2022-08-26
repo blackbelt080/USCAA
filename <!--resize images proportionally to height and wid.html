@@ -1,0 +1,119 @@
+<!--resize images proportionally to height and width-->
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Lucida Sans", sans-serif;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .row:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .menu,
+      .content {
+        float: left;
+        padding: 15px;
+        width: 100%;
+      }
+      @media only screen and (min-width: 600px) {
+        .menu {
+          width: 25%;
+        }
+        .content {
+          width: 75%;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        .menu {
+          width: 20%;
+        }
+        .content {
+          width: 79%;
+        }
+      }
+      .header {
+        background-color: #1c87c9;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+      }
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #666666;
+        color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+      .menu li:hover {
+        background-color: #1c87c9;
+      }
+      .footer {
+        background-color: #1c87c9;
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+      }
+    </style>
+    <title>Responsive Resized Image</title>
+    <head>
+    	<script> 		
+       html {
+        font-family: "Lucida Sans", sans-serif;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    	</script>
+  <body>
+    <h2>Responsive Resized Image</h2>
+    <p>Resize the browser to see the responsive effect:</p>
+    <img src="xxxxxxLocationOfBoxImage" alt="Online Community" />
+    <img src="xxxxxxLocationOfBoxImage" alt="24x7 Critical Response Team Emergency Support" />
+    <img src="xxxxxxLocationOfBoxImage" alt="Free Entry to Annual USCAA Expo" />
+    <img src="xxxxxxLocationOfBoxImage" alt="Expert Customer Engagement Team" />
+     <img src="xxxxxxLocationOfBoxImage" alt="Nationwide Attorney Network" />
+
+  </body>
+
+    
+  </head>
+  <body>
+    <div class="header">
+      <h1>USCAA Community and Connection</h1>
+    </div>
+    <div class="row">
+      <div class="menu">
+        <ul>
+          <li>Online Community</li>
+          <li>24x7 Critical Response Team Emergency Support</li>
+          <li>Expert Customer Engagement Team</li>
+          <li>Free Entry to Annual USCAA Expo</li>
+          <li>Nationwide Attorney Network/li>
+        </ul>
+      </div>
+      <div class="content">
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Resize the browser window to see how the content respond to the resizing.
+      </p>
+    </div>
+  </body>
+</html>
